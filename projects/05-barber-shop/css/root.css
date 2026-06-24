@@ -1,0 +1,10 @@
+:root {
+    --red: rgba(220, 53, 69, 1);
+    --grey: rgba(204, 204, 204, 1);
+    --transparent_grey: rgba(204, 204, 204, .1);
+    --light_grey: rgba(245, 245, 245, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(54, 77, 89, 1);
+    --black2: rgba(0, 0, 0, 1);
+    --pad_x: 10%;
+}

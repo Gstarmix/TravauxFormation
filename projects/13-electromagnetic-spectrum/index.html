@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page pedagogique sur le spectre electromagnetique : ondes radio, micro-ondes, infrarouge, lumiere visible, ultraviolets, rayons X et rayons gamma."
+    />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Les ondes électromagnétiques</title>
+  </head>
+
+  <body id="backTop">
+    <header class="header move" aria-label="En-tete">
+      <nav class="header__nav" data-nav>
+        <button
+          class="header__nav_burger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span class="header__nav_burger_line"></span>
+          <span class="header__nav_burger_line"></span>
+          <span class="header__nav_burger_line"></span>
+        </button>
+        <ul class="header__nav_ul" id="menu-principal">
+          <li class="header__nav_ul_li" data-type="ondes-radio">
+            <a class="header__nav_ul_li_a" href="#">Ondes-Radio</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="micro-ondes">
+            <a class="header__nav_ul_li_a" href="#">Micro-ondes</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="infrarouge">
+            <a class="header__nav_ul_li_a" href="#">Infrarouge</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="lumiere-visible">
+            <a class="header__nav_ul_li_a" href="#">Lumière-Visible</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="ultraviolets">
+            <a class="header__nav_ul_li_a" href="#">Ultraviolets</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="rayons-x">
+            <a class="header__nav_ul_li_a" href="#">Rayons-X</a>
+          </li>
+          <li class="header__nav_ul_li" data-type="rayons-gamma">
+            <a class="header__nav_ul_li_a" href="#">Rayons-Gamma</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__gallery">
+        <img
+          class="header__gallery_imgSattelite alternate"
+          src="assets/images/sattelite.png"
+          alt="Satellite"
+        />
+        <img
+          class="header__gallery_imgTelephone alternateReverse"
+          src="assets/images/telephone.png"
+          alt="Telephone"
+        />
+        <img
+          class="header__gallery_imgMicroonde alternate"
+          src="assets/images/microonde.png"
+          alt="Four a micro-ondes"
+        />
+        <img
+          class="header__gallery_imgVisible alternateReverse"
+          src="assets/images/visible.png"
+          alt="Lumiere visible"
+        />
+        <img
+          class="header__gallery_imgScanner alternate"
+          src="assets/images/scanner.png"
+          alt="Scanner"
+        />
+        <img
+          class="header__gallery_imgWarning alternateReverse"
+          src="assets/images/warning.png"
+          alt="Symbole d'avertissement radiation"
+        />
+        <img
+          class="header__gallery_imgEspace alternate"
+          src="assets/images/espace.png"
+          alt="Espace"
+        />
+      </div>
+
+      <img
+        class="header__imgBar"
+        src="assets/images/bar1.png"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="header__container">
+        <div class="header_container_box">
+          <canvas id="canvas1" class="header__container_box_wave"></canvas>
+        </div>
+
+        <div class="header_container_box">
+          <canvas id="canvas2" class="header__container_box_wave"></canvas>
+          <div class="header__container_box_title">
+            <span class="header__container_box_title_boxAnimate">
+              <canvas
+                id="canvasAnimate1"
+                class="header__container_box_title_boxAnimate_wave"
+              ></canvas>
+            </span>
+          </div>
+        </div>
+
+        <div class="header_container_box">
+          <canvas id="canvas3" class="header__container_box_wave"></canvas>
+          <div class="header__container_box_title">
+            <span class="header__container_box_title_boxAnimate">
+              <canvas
+                id="canvasAnimate2"
+                class="header__container_box_title_boxAnimate_wave"
+              ></canvas>
+            </span>
+          </div>
+        </div>
+
+        <div class="header_container_box">
+          <canvas id="canvas4" class="header__container_box_wave"></canvas>
+          <div class="header__container_box_title">
+            <span class="header__container_box_title_boxAnimate">
+              <canvas
+                id="canvasAnimate3"
+                class="header__container_box_title_boxAnimate_wave"
+              ></canvas>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" aria-label="A propos des ondes">
+      <div class="container">
+        <div class="about__banner">
+          <img
+            class="about__banner_illustrate"
+            src="./assets/images/antenne.png"
+            loading="lazy"
+            alt="antenne"
+          />
+
+          <img
+            class="circle about__banner_circle1"
+            src="assets/images/about-circle-one-ondes-radio.png"
+            width="660"
+            height="534"
+            loading="lazy"
+            aria-hidden="true"
+            alt=""
+          />
+          <img
+            class="circle about__banner_circle2"
+            src="assets/images/about-circle-two-ondes-radio.png"
+            width="660"
+            height="534"
+            loading="lazy"
+            aria-hidden="true"
+            alt=""
+          />
+
+          <img
+            class="about__banner_description"
+            src="assets/images/about-descri-ondes-radio.png"
+            width="650"
+            height="154"
+            loading="lazy"
+            alt="ondes radio"
+          />
+        </div>
+
+        <div class="about__content">
+          <p class="about__content_subtitle">A propos</p>
+          <h2 class="about__content_title">Ondes Radio</h2>
+          <p class="about__content_text">
+            Les ondes radio sont utilisées pour transmettre des informations à
+            travers l'air, telles que la radio et la télévision. Elles peuvent
+            parcourir de longues distances sans se disperser beaucoup.
+          </p>
+          <p class="about__content_text">
+            Les ondes radio, qui ont une fréquence inférieure à 300 GHz et sont
+            utilisées pour les communications sans fil.
+          </p>
+          <div class="about__content_wrapper">
+            <a href="#" class="about__content_wrapper_cta">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" aria-label="Video">
+      <div class="container">
+        <div class="video__card">
+          <h2 class="video__card_title">Spectre electromagnetique</h2>
+          <button class="video__card_play" aria-label="Lire la video">
+            <img
+              class="video__card_play_icon"
+              src="assets/images/play-icon.png"
+              alt=""
+            />
+          </button>
+          <a href="#" class="video__card_text">Voir la video</a>
+        </div>
+        <video class="video__card_player" controls>
+          <source src="assets/videos/spectre.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <footer class="footer move">
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__bottom_copyright">
+            &copy; 2023 Spectre électromagnétique. Tous les droits réservés à
+            <a href="#" class="footer__bottom_copyright_link">Gaylord.</a>
+          </p>
+          <ul class="footer__bottom_list">
+            <li>
+              <a href="#" class="footer__bottom_list_link"
+                >Politique de confidentialite</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__bottom_list_link"
+                >Conditions d'utilisation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#backTop"
+      class="backTop active"
+      aria-label="Revenir en haut"
+      data-back-top-btn
+    >
+      <img class="backTop__icon" src="assets/images/play-icon.png" alt="" />
+    </a>
+
+    <script src="assets/script/general.js"></script>
+    <script src="assets/script/header-footer.js"></script>
+    <script src="assets/script/header-waves.js"></script>
+    <script src="assets/script/header-waves-animates.js"></script>
+    <script src="assets/script/video.js"></script>
+    <script src="assets/script/responsive.js"></script>
+  </body>
+</html>

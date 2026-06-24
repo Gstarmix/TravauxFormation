@@ -1,0 +1,101 @@
+.slider
+    background: url("../images/slider.jpg") center / cover
+    min-height: 50vh
+    display: flex
+    justify-content: space-between
+    position: relative
+    overflow: hidden
+    &__container
+        position: absolute
+        left: $br-medium
+        top: 11%
+        max-width: 60%
+        &_title
+            font-size: 4rem
+            line-height: 1.1
+            margin-bottom: $space-xs
+            &_decoration
+                display: inline-flex
+                background-color: $col-yellow
+                color: $col-grey
+                margin-bottom: 5px
+                padding: 2px 8px
+                border-radius: $radius-sm
+        &_description
+            margin-bottom: $br-normal
+            font-size: 1.6rem
+            line-height: 1.4
+            &_decoration
+                display: inline-flex
+                background-color: $col-grey
+                color: $col-white
+                margin-bottom: 2px
+                padding: 2px 8px
+                border-radius: $radius-sm
+        &_cta
+            display: inline-block
+            font-size: 1.6rem
+            font-weight: 700
+            letter-spacing: 0.02em
+            background-color: $col-black
+            color: $col-white
+            border-bottom: 2px solid $col-yellow
+            padding: 12px 32px
+            border-radius: $radius-sm
+            box-shadow: $shadow-md
+            position: relative
+            left: 50%
+            transition: background-color $transition, transform $transition, box-shadow $transition
+            &:hover
+                background-color: $col-grey
+                transform: translateY(-2px)
+            &:focus-visible
+                outline: 3px solid $col-yellow
+                outline-offset: 3px
+    &__gallery
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(4, 1fr)
+        grid-template-areas: "content1 content10 content8 ."". content9 content3 content2""content6 content5 content7 ."". content4 . ."
+        gap: 4px
+        height: 0
+        position: absolute
+        top: $br-small
+        right: $br-medium
+        &_img
+            height: 100px
+            width: 120px
+            object-fit: cover
+            border-radius: $radius-sm
+            box-shadow: $shadow-sm
+    @media (max-width: 1024px)
+        &__gallery
+            display: none
+        &__container
+            max-width: 80%
+            &_title
+                font-size: 3rem
+            &_description
+                font-size: 1.3rem
+    @media (max-width: $bp-tablet)
+        min-height: auto
+        padding: $space-lg $space-md
+        &__container
+            position: static
+            max-width: 100%
+            &_title
+                font-size: 2.2rem
+            &_description
+                font-size: 1.1rem
+            &_cta
+                left: 0
+                width: 100%
+                text-align: center
+    @media (max-width: $bp-mobile)
+        padding: $space-md
+        &__container
+            &_title
+                font-size: 1.8rem
+            &_cta
+                font-size: 1.3rem
+                padding: 10px 20px

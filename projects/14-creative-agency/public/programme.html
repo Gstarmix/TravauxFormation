@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schmoulbrouk</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><img src="images/logo/schmoul-association.png" alt=""
+      /></a>
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <a class="active" href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a class="" href="programme.html">Programmation</a>
+          </li>
+          <li>
+            <a class="" href="#">Infos pratiques</a>
+          </li>
+          <li>
+            <a class="" href="#">Rétroviseur</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="slider__shadow slider__shadow--left"></div>
+        <div class="slider__shadow slider__shadow--right"></div>
+
+        <div class="slider__text">
+          <h1>20<sup>ème</sup> Festival du Schmoul</h1>
+          <p>VENDREDI 27 JANVIER <br />SAMEDI 28 JANVIER</p>
+          <p>BAIN-DE-BRETAGNE (35)</p>
+        </div>
+
+        <div class="slider__prices">
+          <div class="slider__price">
+            <h3>Pass soirée</h3>
+            <p>26€</p>
+            <div class="slider__quantity">
+              <label for="soiree-quantity">Quantité :</label>
+              <select id="soiree-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button class="slider__add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="slider__price">
+            <h3>Pass week-end</h3>
+            <p>44€</p>
+            <div class="slider__quantity">
+              <label for="weekend-quantity">Quantité :</label>
+              <select id="weekend-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button class="slider__add-to-cart">Ajouter au panier</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <aside class="sidebar">
+          <section class="social-buttons">
+            <div
+              class="social-buttons__button social-buttons__button--facebook"
+            >
+              <div class="social-buttons__icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <span>Facebook</span>
+            </div>
+            <div class="social-buttons__button social-buttons__button--twitter">
+              <div class="social-buttons__icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <span>Twitter</span>
+            </div>
+            <div
+              class="social-buttons__button social-buttons__button--instagram"
+            >
+              <div class="social-buttons__icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </div>
+          </section>
+
+          <section class="date">
+            <div class="date__text">
+              <h2>Prochain Festival :</h2>
+            </div>
+            <div class="date__countdown">
+              <div class="countdown-item">
+                <span id="days">0</span>
+                <p>Jours</p>
+              </div>
+              <div class="countdown-item">
+                <span id="hours">0</span>
+                <p>Heures</p>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds">0</span>
+                <p>Secondes</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="video">
+            <div class="video-wrapper">
+              <video poster="../public/images/slider/shmoulbrouk-slider-2.jpg">
+                <source src="videos/trailer.mp4" type="video/mp4" />
+              </video>
+              <button class="play-button"></button>
+            </div>
+            <div class="video-popup" id="video-popup">
+              <div class="video-popup__overlay"></div>
+              <div class="video-popup__content">
+                <button class="video-popup__close-btn">&times;</button>
+                <video
+                  controls
+                  poster="../public/images/slider/shmoulbrouk-slider-2.jpg"
+                >
+                  <source src="videos/trailer.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </section>
+
+          <a
+            class="twitter-timeline"
+            data-lang="fr"
+            data-height="760"
+            data-theme="light"
+            href="https://twitter.com/festivalschmoul?ref_src=twsrc%5Etfw"
+            >Tweets by festivalschmoul</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </aside>
+
+        <div class="programme" id="Gallery">
+            <h1 class="programme__title">Our<span class="programme__title--highlight">Gallery</span></h1>
+
+            <div class="programme__image-box">
+
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-1.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-2.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-3.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-4.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-5.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+                <div class="programme__image-item">
+                    <img class="programme__image" src="images/project-6.jpg">
+
+                    <h3 class="programme__image-caption">Food</h3>
+                    <p class="programme__image-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="programme__btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Conditions d'utilisation
+            </h3>
+          </div>
+          <ul class="footer__container__section__menu">
+            <li><a href="#">Cookies et protection des données</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Suivez-nous
+            </h3>
+          </div>
+          <ul class="footer__container__section__social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Newsletter
+            </h3>
+          </div>
+          <form class="footer__container__section__form">
+            <input type="email" placeholder="Votre email" />
+            <button type="submit">Abonnez-vous</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2023 Schmoulbrouk. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/programme.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/testimonials.js"></script>
+  </body>
+</html>

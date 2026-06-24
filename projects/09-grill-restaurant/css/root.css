@@ -1,0 +1,12 @@
+:root {
+    --color_1: rgb(34, 34, 34);
+    --color_2: rgb(252, 252, 252);
+    --color_3: rgb(240, 38, 18);
+    --color_4: rgb(51, 51, 51);
+    --color_5: rgb(120, 120, 120);
+    --transparent: transparent;
+    --font-serif: "BreeSerif-Regular", Georgia, serif;
+    --font-script: "CoveredByYourGrace-Regular", "Comic Sans MS", cursive;
+    --font-body: "OpenSans-VariableFont_wdth", "Segoe UI", Arial, sans-serif;
+    --maxw: 1140px;
+}

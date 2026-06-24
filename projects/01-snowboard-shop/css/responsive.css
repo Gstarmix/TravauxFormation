@@ -1,0 +1,99 @@
+@media screen and (max-width:1024px) {
+	#temoignage {
+		padding:80px 40% 80px 6%;
+	}
+	#blog figure {
+		width:48%;
+	}
+}
+@media screen and (max-width:768px) {
+	#header {
+		padding:0 5%;
+	}
+	#burger {
+		display: block;
+		margin:auto 0;
+		cursor:pointer;
+	}
+	#menu_haut ul {
+		display:none;
+	}
+	#menu_haut input[type="checkbox"]:checked + ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		z-index: 100;
+		background-color: rgba(0,0,0,.92);
+		width: 100%;
+		height: calc(100vh - 60px);
+		padding-top:20px;
+		gap:0;
+	}
+	#menu_haut ul li {
+		flex: 1;
+		display:flex;
+		align-items:center;
+		justify-content: center;
+	}
+	#menu_haut ul li a {
+		padding: 18px 0;
+		width: 60%;
+		min-width:200px;
+		text-align: center;
+		background-color: #000;
+		border: 1px solid #c3c3c3;
+		border-radius:8px;
+		transition:background-color .2s ease;
+	}
+	#menu_haut ul li a:hover {
+		background-color: #e53935;
+	}
+	#temoignage {
+		padding:70px 6%;
+		background-image:linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../images/vetements-snowboard.jpg");
+		background-position:center;
+		background-size:cover;
+	}
+	#produits,
+	#blog {
+		padding:60px 6%;
+	}
+}
+@media screen and (max-width:480px) {
+	h1 {
+		font-size:1.85rem;
+	}
+	#slider img {
+		height:70vh;
+	}
+	#blog figure {
+		width:100%;
+	}
+	#footer {
+		justify-content:center;
+		text-align:center;
+		gap:14px;
+	}
+}
+@media screen and (max-width:360px) {
+	body {
+		font-size:.95rem;
+	}
+	#header img {
+		height:34px;
+	}
+	#produits,
+	#blog,
+	#temoignage,
+	#footer {
+		padding-left:5%;
+		padding-right:5%;
+	}
+	#temoignage {
+		padding-top:60px;
+		padding-bottom:60px;
+	}
+}

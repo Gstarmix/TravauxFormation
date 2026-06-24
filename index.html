@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaylord ABOEKA : travaux de formation</title>
+<meta name="description" content="Travaux de formation de Gaylord ABOEKA : intégration web, emailing, PHP, Laravel, WordPress et design.">
+<style>
+  :root{ --bg:#0d1117; --panel:#161b22; --line:#222c38; --txt:#e6edf3; --muted:#9aa7b4; --accent:#4f9dff; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ background:var(--bg); color:var(--txt); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; line-height:1.55; }
+  a{ color:inherit; text-decoration:none; }
+  header{ padding:64px 24px 40px; max-width:1100px; margin:0 auto; }
+  header .kicker{ color:var(--accent); font-weight:600; letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; }
+  header h1{ font-size:2.5rem; margin:.3em 0 .2em; }
+  header p.lead{ color:var(--muted); max-width:62ch; font-size:1.08rem; }
+  header .links{ margin-top:22px; display:flex; gap:12px; flex-wrap:wrap; }
+  header .links a{ border:1px solid var(--line); padding:9px 16px; border-radius:8px; font-size:.92rem; transition:.15s; }
+  header .links a:hover{ border-color:var(--accent); color:var(--accent); }
+  main{ max-width:1100px; margin:0 auto; padding:0 24px 80px; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:22px; }
+  .card{ position:relative; background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:transform .15s, border-color .15s; }
+  .card:hover{ transform:translateY(-4px); border-color:var(--accent); }
+  .card .num{ position:absolute; top:10px; left:10px; background:rgba(13,17,23,.8); color:var(--accent); font-weight:700; font-size:.78rem; padding:3px 9px; border-radius:20px; z-index:2; }
+  .card .cat{ position:absolute; top:10px; right:10px; background:rgba(13,17,23,.8); color:#cdd6e0; font-weight:600; font-size:.72rem; padding:3px 10px; border-radius:20px; z-index:2; }
+  .thumb{ aspect-ratio:16/10; background:#0a0e14; overflow:hidden; }
+  .thumb img{ width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
+  .body{ padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .body h2{ font-size:1.15rem; }
+  .body p{ color:var(--muted); font-size:.92rem; flex:1; }
+  .tags{ list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+  .tags li{ font-size:.72rem; color:var(--accent); border:1px solid var(--line); padding:2px 9px; border-radius:20px; }
+  footer{ border-top:1px solid var(--line); padding:32px 24px; text-align:center; color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="kicker">Travaux de formation</div>
+    <h1>Le travail de Gaylord ABOEKA</h1>
+    <p class="lead">Mes réalisations de formation : intégration web en HTML, CSS et SASS, emailing, PHP, Laravel, WordPress et un peu de design. Chaque carte ouvre la démo ou le détail du projet.</p>
+    <div class="links">
+      <a href="https://github.com/Gstarmix/TravauxFormation">Code source sur GitHub</a>
+      <a href="https://aboeka.fr">aboeka.fr</a>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <a class="card" href="projects/00-coloured-lines/index.html">
+        <span class="num">00</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/00-coloured-lines/thumb.png" alt="Aperçu du projet Coloured Lines" loading="lazy"></div>
+        <div class="body">
+          <h2>Coloured Lines</h2>
+          <p>Page à blocs colorés pour travailler la mise en page en colonnes.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/01-snowboard-shop/index.html">
+        <span class="num">01</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/01-snowboard-shop/thumb.png" alt="Aperçu du projet Snowboard Corporation" loading="lazy"></div>
+        <div class="body">
+          <h2>Snowboard Corporation</h2>
+          <p>Landing page d'une boutique de snowboard en intégration responsive.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>responsive</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/02-flattool-saas-landing/index.html">
+        <span class="num">02</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/02-flattool-saas-landing/thumb.png" alt="Aperçu du projet Flattools" loading="lazy"></div>
+        <div class="body">
+          <h2>Flattools</h2>
+          <p>Landing page d'une application SaaS au style flat design.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/03-design-studio/index.html">
+        <span class="num">03</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/03-design-studio/thumb.png" alt="Aperçu du projet Free design studio" loading="lazy"></div>
+        <div class="body">
+          <h2>Free design studio</h2>
+          <p>Site vitrine d'un studio de design en plusieurs sections.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/04-fooseshoes-shop/index.html">
+        <span class="num">04</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/04-fooseshoes-shop/thumb.png" alt="Aperçu du projet Fooseshoes" loading="lazy"></div>
+        <div class="body">
+          <h2>Fooseshoes</h2>
+          <p>Boutique de chaussures avec catalogue et galerie de produits.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/05-barber-shop/index.html">
+        <span class="num">05</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/05-barber-shop/thumb.png" alt="Aperçu du projet Barberz" loading="lazy"></div>
+        <div class="body">
+          <h2>Barberz</h2>
+          <p>Site d'un salon de barbier décliné en desktop, tablette et mobile.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>responsive</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/06-corporate-business/index.html">
+        <span class="num">06</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/06-corporate-business/thumb.png" alt="Aperçu du projet Business" loading="lazy"></div>
+        <div class="body">
+          <h2>Business</h2>
+          <p>Page d'accueil corporate avec la typographie Montserrat intégrée.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/07-fitlife-gym/index.html">
+        <span class="num">07</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/07-fitlife-gym/thumb.png" alt="Aperçu du projet Fitlife" loading="lazy"></div>
+        <div class="body">
+          <h2>Fitlife</h2>
+          <p>Site d'une salle de sport avec cours, coachs et blog.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/08-food-restaurant/index.html">
+        <span class="num">08</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/08-food-restaurant/thumb.png" alt="Aperçu du projet Food Website" loading="lazy"></div>
+        <div class="body">
+          <h2>Food Website</h2>
+          <p>Site d'un restaurant avec menu, galerie et avis clients.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/09-grill-restaurant/index.html">
+        <span class="num">09</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/09-grill-restaurant/thumb.png" alt="Aperçu du projet The Grill" loading="lazy"></div>
+        <div class="body">
+          <h2>The Grill</h2>
+          <p>Landing page d'un restaurant grill avec hero plein écran, menu et équipe.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/10-bem-methodology/index.html">
+        <span class="num">10</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/10-bem-methodology/thumb.png" alt="Aperçu du projet Exercice BEM" loading="lazy"></div>
+        <div class="body">
+          <h2>Exercice BEM</h2>
+          <p>Exercice de mise en pratique de la méthodologie BEM.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/11-goyave-landing/index.html">
+        <span class="num">11</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/11-goyave-landing/thumb.png" alt="Aperçu du projet Goyave" loading="lazy"></div>
+        <div class="body">
+          <h2>Goyave</h2>
+          <p>Page d'atelier autour de SASS et de la composition visuelle.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/12-pokemon-landing/index.html">
+        <span class="num">12</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/12-pokemon-landing/thumb.png" alt="Aperçu du projet Pokemon" loading="lazy"></div>
+        <div class="body">
+          <h2>Pokemon</h2>
+          <p>Landing page sur l'univers Pokémon, intégrée en SASS.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/13-electromagnetic-spectrum/index.html">
+        <span class="num">13</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/13-electromagnetic-spectrum/thumb.png" alt="Aperçu du projet Spectre électromagnétique" loading="lazy"></div>
+        <div class="body">
+          <h2>Spectre électromagnétique</h2>
+          <p>Page pédagogique sur les ondes du spectre électromagnétique.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li><li>JS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/14-creative-agency/index.html">
+        <span class="num">14</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/14-creative-agency/thumb.png" alt="Aperçu du projet Schmoulbrouk" loading="lazy"></div>
+        <div class="body">
+          <h2>Schmoulbrouk</h2>
+          <p>Site d'agence créative en SASS avec galerie.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li><li>JS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/15-personal-portfolio/index.html">
+        <span class="num">15</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/15-personal-portfolio/thumb.png" alt="Aperçu du projet Portfolio" loading="lazy"></div>
+        <div class="body">
+          <h2>Portfolio</h2>
+          <p>Mon portfolio personnel avec sélecteur de thème de couleurs.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/16-music-event/index.html">
+        <span class="num">16</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/16-music-event/thumb.png" alt="Aperçu du projet Music Event" loading="lazy"></div>
+        <div class="body">
+          <h2>Music Event</h2>
+          <p>Page d'un événement musical réalisée en examen d'intégration.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/17-quality-design-agency/index.html">
+        <span class="num">17</span>
+        <span class="cat">Web</span>
+        <div class="thumb"><img src="projects/17-quality-design-agency/thumb.png" alt="Aperçu du projet Quality Design" loading="lazy"></div>
+        <div class="body">
+          <h2>Quality Design</h2>
+          <p>Site vitrine d'agence réalisé en évaluation d'intégration.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>SASS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/18-emailing/index.html">
+        <span class="num">18</span>
+        <span class="cat">Emailing</span>
+        <div class="thumb"><img src="projects/18-emailing/thumb.png" alt="Aperçu du projet Emailing" loading="lazy"></div>
+        <div class="body">
+          <h2>Emailing</h2>
+          <p>Intégration de courriels HTML avec CSS inline, trois travaux de formation.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>emailing</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/19-photoshop-feel-coffee/index.html">
+        <span class="num">19</span>
+        <span class="cat">Design</span>
+        <div class="thumb"><img src="projects/19-photoshop-feel-coffee/thumb.png" alt="Aperçu du projet Photoshop Feel Coffee" loading="lazy"></div>
+        <div class="body">
+          <h2>Photoshop Feel Coffee</h2>
+          <p>Composition visuelle réalisée sous Photoshop : montage et retouche.</p>
+          <ul class="tags"><li>Photoshop</li><li>Design</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/20-wordpress-bonx-gaming/index.html">
+        <span class="num">20</span>
+        <span class="cat">WordPress</span>
+        <div class="thumb"><img src="projects/20-wordpress-bonx-gaming/thumb.png" alt="Aperçu du projet WordPress Bonx Gaming" loading="lazy"></div>
+        <div class="body">
+          <h2>WordPress Bonx Gaming</h2>
+          <p>Site gaming intégré, version HTML statique issue d'un projet WordPress.</p>
+          <ul class="tags"><li>WordPress</li><li>HTML</li><li>CSS</li><li>PHP</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/21-php-snow-exam/index.html">
+        <span class="num">21</span>
+        <span class="cat">PHP</span>
+        <div class="thumb"><img src="projects/21-php-snow-exam/thumb.png" alt="Aperçu du projet Examen PHP Snow" loading="lazy"></div>
+        <div class="body">
+          <h2>Examen PHP Snow</h2>
+          <p>Application PHP et MySQL avec back-office d'administration, réalisée en examen.</p>
+          <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/22-php-flattool/index.html">
+        <span class="num">22</span>
+        <span class="cat">PHP</span>
+        <div class="thumb"><img src="projects/22-php-flattool/thumb.png" alt="Aperçu du projet Flattool PHP" loading="lazy"></div>
+        <div class="body">
+          <h2>Flattool PHP</h2>
+          <p>Intégration dynamique en PHP avec une partie front et une logique côté serveur.</p>
+          <ul class="tags"><li>PHP</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+      </a>
+      <a class="card" href="projects/23-laravel-inventory/index.html">
+        <span class="num">23</span>
+        <span class="cat">Laravel</span>
+        <div class="thumb"><img src="projects/23-laravel-inventory/thumb.png" alt="Aperçu du projet Laravel Inventory" loading="lazy"></div>
+        <div class="body">
+          <h2>Laravel Inventory</h2>
+          <p>Application de gestion d'inventaire bâtie avec le framework Laravel.</p>
+          <ul class="tags"><li>Laravel</li><li>PHP</li><li>MySQL</li></ul>
+        </div>
+      </a>
+    </div>
+  </main>
+  <footer>
+    Projets de formation, intégrés par mes soins. Présentés sur aboeka.fr.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+$brown: #b46816
+$darkbrown: #78591f
+$lightbrown: #d7ae71
+$blue: #0462aa
+$dark: #202020
+$lightdark: #2e2e2c
+$br-normal: 5px
+$br-large: 15px
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-thin.woff2")
+    font-weight: 300
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-regular.woff2")
+    font-weight: 400
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-bold.woff2")
+    font-weight: 700
+img, i
+    display: block
+.container
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 25px
+.button
+    padding: 15px 20px
+    color: #fff
+    text-decoration: none
+    &:hover
+        background-color: $lightdark
+.body
+    font-family: Poppins, sans-serif
+    .header
+        background: url("../images/banniere.webp") center / cover
+        height: 50vh
+    .nav
+        background-color: $dark
+        position: relative
+        .container
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__logo
+            width: 90px
+        &__menu
+            display: none
+            @media screen and (min-width: 640px)
+                display: flex
+                list-style-type: none
+                align-items: center
+                @media screen and (min-width: 1200px)
+                    position: relative
+                    right: 11%
+            &_li
+                &_a
+                    padding: 10px 15px
+                    text-transform: uppercase
+                    color: #fff
+                    text-decoration: none
+                    position: relative
+                    &:hover:after
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        height: 3px
+                        background-color: $brown
+        &__burger
+            font-size: 4rem
+            color: #fff
+            @media screen and (min-width: 640px)
+                display: none
+        &__button
+            display: none
+            @media screen and (min-width: 640px)
+                display: flex
+                background-color: $brown
+                text-transform: uppercase
+                height: 100%
+                padding: 37px 10px
+    .one
+        background-image: url("../images/axiom-pattern.webp")
+        padding-top: 30px
+        .container
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            align-items: center
+            @media screen and (min-width: 640px)
+                grid-template-columns: repeat(2, 1fr)
+        &__content
+            text-align: center
+            &_title
+                padding-bottom: 30px
+                color: $brown
+                font-size: 2rem
+                font-weight: 600
+            &_description
+                padding-bottom: 40px
+                color: $dark
+            &_button
+                background-color: $brown
+                &_fleche
+                    font-weight: bold
+        &__render
+            width: 400px
+            margin: 0 auto
+            margin-top: 30px
+    .two
+        background-color: $dark
+        padding: 30px
+        display: flex
+        text-align: center
+        &__title
+            padding-bottom: 30px
+            color: $brown
+            font-size: 2rem
+            font-weight: 600
+        &__gallery
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            gap: 1rem
+            padding-bottom: 50px
+            @media screen and (min-width: 640px)
+                grid-template-columns: repeat(2, 1fr)
+            @media screen and (min-width: 1200px)
+                grid-template-columns: repeat(4, 1fr)
+            &_img
+                display: flex
+                justify-content: center
+                position: relative
+                border-radius: 5px
+                &_description
+                    text-transform: uppercase
+                    position: absolute
+                    bottom: 0
+                    color: #fff
+                    font-size: 3rem
+                    font-weight: 600
+                    text-shadow: 2px 2px $dark
+        &__button
+            background-color: $blue

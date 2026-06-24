@@ -1,0 +1,209 @@
+.slider {
+  background-image: url("../images/slider/shmoulbrouk-slider.png");
+  background-size: cover;
+  background-position: center 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  min-height: 32rem;
+  width: 100%;
+  padding: $spacing-main;
+  gap: $spacing-main;
+  &__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__shadow--left {
+    background: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 60%
+    );
+  }
+  &__shadow--right {
+    background: linear-gradient(
+      -40deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 60%
+    );
+  }
+  &__text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: $color-white;
+    display: grid;
+    row-gap: 1rem;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    h1 {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      letter-spacing: 1px;
+      animation: fadeInUpTitle 1s ease-out forwards;
+    }
+    p {
+      font-family: $font-family-headings-2;
+      font-size: $font-size-md;
+      font-weight: $line-height-sm;
+      animation: fadeInUpParagraph 1.2s ease-out forwards;
+      color: inherit;
+    }
+  }
+  .slider__prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .slider__price {
+      flex: 1;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $color-main;
+      color: $color-white;
+      padding: $spacing-lg;
+      border-radius: 0.3rem;
+      box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 16rem;
+      position: relative;
+      h3 {
+        font-size: $font-size-md;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 5.6rem;
+          height: 5.6rem;
+          background-color: $color-secondary-2;
+          border-radius: 50%;
+          z-index: -1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 6.3rem;
+          height: 6.3rem;
+          background-color: $color-secondary-2;
+          border-radius: 50%;
+          z-index: -1;
+          animation: ondulation 3s infinite;
+        }
+      }
+      .slider__quantity {
+        label {
+          font-size: $font-size-base;
+          font-weight: bold;
+          margin-right: 0.5rem;
+        }
+        select {
+          padding: 0.3rem 0.5rem;
+          font-size: $font-size-base;
+          border: 0.1rem solid #1a1a1a;
+          border-radius: 0.5rem;
+        }
+      }
+      .slider__add-to-cart {
+        @include button-styles();
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@keyframes fadeInUpTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUpParagraph {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes ondulation {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1024px) {
+  .slider {
+    flex-direction: column;
+    height: auto;
+    padding-block: 4rem;
+    gap: $spacing-xl;
+  }
+  .slider .slider__prices {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    &__text {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .slider__prices {
+      flex-direction: column;
+      width: 100%;
+      .slider__price {
+        width: 100%;
+        max-width: 18rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}

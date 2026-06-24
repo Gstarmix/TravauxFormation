@@ -1,0 +1,60 @@
+.service
+    padding: $space-xl $br-large
+    max-width: $container-max
+    margin-inline: auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-areas: "content1 content1 content1 content1""content2 content2 content2 content2""content3 content4 content5 content6"
+    gap: $space-lg
+    text-align: center
+    &__title
+        font-size: 2rem
+        font-weight: 700
+        line-height: 1.25
+        letter-spacing: 0.01em
+        color: $col-grey
+    &__description
+        font-size: 1.25rem
+        line-height: 1.5
+        padding-bottom: $space-sm
+        color: $col-grey
+    &__article
+        &_figureContainer
+            border-radius: $radius-md
+            overflow: hidden
+            box-shadow: $shadow-sm
+            transition: transform $transition, box-shadow $transition
+            &:hover
+                transform: translateY(-4px)
+                box-shadow: $shadow-md
+            &_figure
+                background-color: $col-yellow
+                padding: $br-tiny
+                &_img
+                    margin: 0 auto
+                    padding: $br-large
+                &_figcaption
+                    font-size: 1.25rem
+                    font-weight: 700
+                    padding-bottom: $space-xs
+            &_description
+                background-color: $col-grey
+                padding: $br-normal $br-small
+                color: $col-white
+                font-size: 1rem
+                line-height: 1.5
+    @media (max-width: $bp-tablet)
+        padding: $space-lg $space-md
+        gap: $space-md
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-areas: "content1 content1""content2 content2""content3 content4""content5 content6"
+        &__title
+            font-size: 1.6rem
+        &__description
+            font-size: 1.1rem
+    @media (max-width: $bp-mobile)
+        padding: $space-lg $space-sm
+        grid-template-columns: 1fr
+        grid-template-areas: "content1""content2""content3""content4""content5""content6"
+        &__title
+            font-size: 1.4rem

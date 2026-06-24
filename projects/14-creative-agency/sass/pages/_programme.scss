@@ -1,0 +1,88 @@
+.programme {
+    grid-area: programme;
+    width: 100%;
+    padding: 70px 0;
+    &__title {
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--highlight {
+            margin-left: 15px;
+            color: #fac031;
+            font-family: mv boli;
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #fac031;
+                display: block;
+                position: relative;
+                bottom: 15px;
+            }
+        }
+    }
+    &__image-box {
+        width: 95%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    &__image-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+    }
+    &__image {
+        width: 100%;
+        transition: .3s;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+    &__image-caption {
+        position: absolute;
+        font-size: 35px;
+        margin-bottom: 130px;
+        color: #fac031;
+        font-family: polo;
+        z-index: 5;
+        opacity: 0;
+        transition: 0.3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__image-description {
+        position: absolute;
+        width: 400px;
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        line-height: 22px;
+        opacity: 0;
+        z-index: 5;
+        transition: 0.3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__btn {
+        position: absolute;
+        margin-top: 180px;
+        color: #000;
+        background: #fac031;
+        padding: 7px 25px;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(45px);
+        z-index: 5;
+        transition: 0.3s;
+        &:hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.about {
+  grid-area: about;
+  h2 {
+    margin-bottom: $spacing-md;
+  }
+  p {
+    margin-bottom: $spacing-lg;
+  }
+  button {
+    @include button-styles($padding: 1rem 2rem);
+    margin-top: $spacing-sm;
+  }
+}

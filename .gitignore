@@ -1,0 +1,13 @@
+node_modules/
+vendor/
+.env
+.env.local
+*.local.php
+.DS_Store
+Thumbs.db
+*.zip
+*.wpress
+*.psd
+*.ai
+npm-debug.log*
+yarn-error.log*

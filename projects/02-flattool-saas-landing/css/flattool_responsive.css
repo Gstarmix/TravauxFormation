@@ -1,0 +1,147 @@
+@media screen and (min-width:1600px){
+	:root{
+		--padding_h:max(15%, calc((100% - 1280px) / 2));
+	}
+}
+@media screen and (max-width:1024px){
+	:root{
+		--padding_h:8%;
+		--padding_v:44px;
+	}
+	#slider{
+		padding-bottom: 100px;
+	}
+}
+@media screen and (max-width:768px){
+	:root{
+		--padding_h:6%;
+		--padding_v:40px;
+	}
+	.w2,
+	.w3{
+		width:100%;
+	}
+	.w4{
+		width:48%;
+	}
+	#slider{
+		flex-direction: column;
+		text-align: center;
+		min-height: auto;
+		padding-bottom: var(--padding_v);
+	}
+	#slider figure.w2,
+	#slider article.w2{
+		width:100%;
+	}
+	#slider h1{
+		text-align: center;
+	}
+	#slider article{
+		align-items: center;
+		margin: 24px 0;
+	}
+	#slider > div{
+		position: static;
+		width: 100%;
+		justify-content: center;
+		gap: 12px;
+	}
+	#slider::after{
+		display: none;
+	}
+	#slider::before{
+		display: none;
+	}
+	#features article{
+		background-position: center top !important;
+		padding-top: 80px;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	#features h2,
+	#features p{
+		padding-left: 0;
+	}
+	#features h2{
+		text-align: center;
+	}
+	#formules article{
+		padding: 60px 30px 30px;
+		margin-bottom: 28px;
+	}
+	#formules .btn{
+		position: static;
+		margin-top: 20px;
+	}
+	#formules .btn a{
+		margin: 0 auto;
+	}
+	#blog section.w2{
+		margin-bottom: 24px;
+	}
+	#footer{
+		flex-direction: column;
+		gap: 12px;
+		text-align: center;
+	}
+}
+@media screen and (max-width:480px){
+	:root{
+		--padding_h:5%;
+		--padding_v:32px;
+	}
+	.w4{
+		width:48%;
+	}
+	#header{
+		height:auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		flex-direction: column;
+		gap: 6px;
+		justify-content: center;
+	}
+	#header figure{
+		padding-right:0;
+	}
+	#header{
+		position: relative;
+	}
+	#slider{
+		margin-top: 0;
+	}
+	#header::before{
+		display: none;
+	}
+	form .w2{
+		width:100%;
+	}
+}
+@media screen and (max-width:360px){
+	:root{
+		--padding_v:28px;
+	}
+	.w4{
+		width:100%;
+		margin-bottom: 16px;
+	}
+	#slider > div{
+		flex-direction: column;
+	}
+	#slider .btn{
+		width: 100%;
+	}
+	#slider .btn a{
+		width: 100%;
+	}
+}
+@media (prefers-reduced-motion: reduce){
+	*,
+	*::before,
+	*::after{
+		animation-duration: .001ms !important;
+		transition-duration: .001ms !important;
+		scroll-behavior: auto !important;
+	}
+}

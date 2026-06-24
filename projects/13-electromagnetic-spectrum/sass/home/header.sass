@@ -1,0 +1,225 @@
+.header__nav.active
+    transform: translateY(0%)
+    background-color: rgba(255, 255, 255, 1)
+    box-shadow: 0 0 5px $col-black
+    animation: slideIn 0.5s ease forwards
+.header__nav.active .header__nav_ul_li_a
+    color: $col-dark-blue
+.header
+    background-color: $col-dark-blue
+    background-image: url("../images/pattern.png")
+    position: relative
+    height: 90vh
+    display: flex
+    justify-content: center
+    align-items: center
+    --color-before-background: rgba(127, 0, 0, .2)
+    --color-after-background: rgba(127, 0, 0, .2)
+    z-index: 9
+    &::before
+        content: ""
+        position: absolute
+        top: -1000px
+        left: -500px
+        width: 1500px
+        height: 1500px
+        background-image: radial-gradient(circle, var(--color-before-background) 20%, transparent 70% 100%)
+        z-index: -1
+    &::after
+        content: ""
+        position: absolute
+        top: -1000px
+        right: -500px
+        width: 1500px
+        height: 1500px
+        background-image: radial-gradient(circle, var(--color-after-background) 20%, transparent 70% 100%)
+        z-index: -1
+    &__nav
+        position: fixed
+        background-color: transparent
+        box-shadow: none
+        transition: 0.25s ease
+        top: 0
+        text-align: center
+        z-index: 10
+        @media screen and (max-width: 1000px)
+            width: 100%
+        .showUl
+            display: flex
+        &_ul
+            display: table
+            text-align: center
+            width: 100%
+            @media screen and (max-width: 1000px)
+                display: none
+                flex-direction: column
+                position: relative
+                background-color: rgba(255, 255, 255, 0.98)
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15)
+                border-radius: 0 0 12px 12px
+                padding-block: 8px
+                .header__nav_ul_li_a
+                    color: $col-dark-blue
+            &_li
+                display: table-cell
+                position: relative
+                padding-block: 15px
+                &_a
+                    color: #fff
+                    text-transform: uppercase
+                    letter-spacing: 0.15em
+                    display: inline-block
+                    padding: 15px 20px
+                    position: relative
+                    transition: color var(--transition)
+                    &::after
+                        bottom: 0
+                        content: ""
+                        display: block
+                        height: 2px
+                        left: 50%
+                        position: absolute
+                        background: var(--background-after-color)
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s
+                        width: 0
+                    &:hover::after
+                        width: 100%
+                        left: 0
+                    &_active:first-child>.header__nav_ul_li_a
+                        color: $col-ondes-radio
+                        --background-after-color: rgba(127, 0, 0, 1)
+                    &_active:nth-child(2)>.header__nav_ul_li_a
+                        color: $col-micro-ondes
+                        --background-after-color: rgba(255, 102, 0, 1)
+                    &_active:nth-child(3)>.header__nav_ul_li_a
+                        color: $col-infrarouge
+                        --background-after-color: rgba(255, 215, 0, 1)
+                    &_active:nth-child(4)>.header__nav_ul_li_a
+                        color: $col-visible
+                        --background-after-color: rgba(0, 255, 0, 1)
+                    &_active:nth-child(5)>.header__nav_ul_li_a
+                        color: $col-ultraviolets
+                        --background-after-color: rgba(139, 0, 255, 1)
+                    &_active:nth-child(6)>.header__nav_ul_li_a
+                        color: $col-rayons-x
+                        --background-after-color: rgba(0, 0, 255, 1)
+                    &_active:last-child>.header__nav_ul_li_a
+                        color: $col-rayon-gamma
+                        --background-after-color: rgba(0, 0, 0, 1)
+        &_burger
+            position: relative
+            display: none
+            flex-direction: column
+            justify-content: center
+            gap: 6px
+            width: 48px
+            height: 48px
+            padding: 10px
+            margin: 8px auto
+            background: transparent
+            border: none
+            border-radius: 8px
+            cursor: pointer
+            transition: var(--transition)
+            &_line
+                display: block
+                width: 100%
+                height: 3px
+                border-radius: 3px
+                background-color: $col-black
+                transition: var(--transition)
+            &.is-active &_line:nth-child(1)
+                transform: translateY(9px) rotate(45deg)
+            &.is-active &_line:nth-child(2)
+                opacity: 0
+            &.is-active &_line:nth-child(3)
+                transform: translateY(-9px) rotate(-45deg)
+            @media screen and (max-width: 1000px)
+                display: flex
+    &__gallery
+        position: absolute
+        top: 20%
+        display: flex
+        gap: 100px
+        img
+            height: 100px
+        &_imgSattelite
+            @media screen and (max-width: 1500px)
+                display: none
+        &_imgTelephone
+            @media screen and (max-width: 1000px)
+                display: none
+        &_imgMicroonde
+            @media screen and (max-width: 700px)
+                display: none
+        &_imgVisible
+            @media screen and (max-width: 700px)
+                height: 150px !important
+        &_imgScanner
+            @media screen and (max-width: 700px)
+                display: none
+        &_imgWarning
+            @media screen and (max-width: 1000px)
+                display: none
+        &_imgEspace
+            @media screen and (max-width: 1500px)
+                display: none
+    &__container
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        position: absolute
+        top: 74%
+        .header_container_box:nth-of-type(2) .header__container_box_title::after
+            content: "Micro-ondes"
+        .header_container_box:nth-of-type(3) .header__container_box_title::after
+            content: "Visible"
+        .header_container_box:last-child .header__container_box_title::after
+            content: "Rayons-X"
+        &_box
+            &_wave
+                width: 100%
+                height: 125px
+                padding-inline: 80px
+                @media screen and (max-width: 1500px)
+                    padding-inline: 40px
+                @media screen and (max-width: 1200px)
+                    padding-inline: 0
+            &_title
+                background-color: $col-grey
+                width: 42%
+                height: 50%
+                position: relative
+                z-index: 1
+                bottom: 130px
+                right: 80px
+                padding: 10px 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                @media screen and (max-width: 1000px)
+                    width: 100px
+                    height: 80px
+                    bottom: 97px
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    border-top: 30px solid $col-grey
+                    width: 100%
+                    top: -30px
+                    border-top-left-radius: 10px
+                    border-top-right-radius: 10px
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 100%
+                    top: -16px
+                    text-align: center
+                &_boxAnimate
+                    background-color: $col-white
+                    width: 100%
+                    height: 100%
+                    &_wave
+                        width: 100%
+                        height: 100%

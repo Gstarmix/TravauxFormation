@@ -1,0 +1,171 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+  .social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-sm;
+    &__button {
+      display: inline-block;
+      height: 2.8rem;
+      width: 2.8rem;
+      overflow: hidden;
+      background: $color-white;
+      border-radius: 5rem;
+      cursor: pointer;
+      box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.1);
+      transition: all 0.2s linear;
+      &--facebook:hover .social-buttons__icon {
+        background: rgba(59, 89, 152, 0.8);
+      }
+      &--twitter:hover .social-buttons__icon {
+        background: rgba(85, 172, 238, 0.8);
+      }
+      &--instagram:hover .social-buttons__icon {
+        background: rgba(193, 53, 132, 0.8);
+      }
+    }
+    &__button:hover {
+      width: 9.4rem;
+    }
+    &__icon {
+      display: inline-block;
+      height: 2.8rem;
+      width: 2.8rem;
+      text-align: center;
+      border-radius: 5rem;
+      box-sizing: border-box;
+      line-height: 2.8rem;
+      transition: all 0.2s linear;
+      i {
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+        transition: all 0.2s linear;
+      }
+    }
+    &__button:hover .social-buttons__icon i {
+      color: $color-white;
+    }
+    &__button {
+      span {
+        font-size: 1rem;
+        font-weight: $font-weight-bold;
+        line-height: 2.8rem;
+        margin-left: 0.5rem;
+        transition: all 0.2s linear;
+      }
+      &--facebook span {
+        color: rgba(59, 89, 152, 1);
+      }
+      &--twitter span {
+        color: rgba(85, 172, 238, 1);
+      }
+      &--instagram span {
+        color: rgba(193, 53, 132, 1);
+      }
+    }
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      text-align: center;
+    }
+    &__countdown {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 auto;
+      .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 $spacing-sm;
+        span {
+          font-size: $font-size-lg;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  .video {
+    .video-wrapper {
+      position: relative;
+      video {
+        display: block;
+        width: 100%;
+        border-radius: 1rem;
+      }
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        &:before {
+          content: "\f04b";
+          font-family: FontAwesome;
+          font-size: 24px;
+          color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .video-popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        video {
+          display: block;
+          max-width: 90%;
+          max-height: 90%;
+        }
+      }
+      &__close-btn {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        font-size: 24px;
+        background-color: $color-white;
+        color: $color-main;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+      }
+    }
+    &.no-header {
+      header {
+        display: none;
+      }
+    }
+  }
+  .twitter-timeline {
+    margin-top: 1rem;
+  }
+}

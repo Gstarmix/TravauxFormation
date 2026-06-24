@@ -1,0 +1,39 @@
+.one
+    background: linear-gradient(180deg, rgba($darker, .9), rgba($dark, .95)), url("../images/axiom-pattern.webp")
+    padding-block: $space-xl
+    .container
+        display: grid
+        grid-template-columns: 1fr
+        align-items: center
+        gap: $space-lg
+        @media screen and (min-width: 640px)
+            grid-template-columns: 1fr 1fr
+    &__content
+        text-align: center
+        @media screen and (min-width: 640px)
+            text-align: left
+        &_title
+            margin-bottom: $space-md
+            color: $brown
+            font-size: clamp(1.9rem, 5vw, 2.8rem)
+            font-weight: 700
+        &_description
+            margin-bottom: $space-lg
+            color: $muted
+            font-size: 1.05rem
+            max-width: 48ch
+            margin-inline: auto
+            @media screen and (min-width: 640px)
+                margin-inline: 0
+        &_button
+            background-color: $brown
+            &:hover
+                background-color: $darkbrown
+            &_fleche
+                font-weight: bold
+    &__render
+        width: 100%
+        max-width: 400px
+        height: auto
+        margin: 0 auto
+        filter: drop-shadow(0 12px 30px rgba(#000, .5))

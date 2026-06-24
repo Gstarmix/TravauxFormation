@@ -1,0 +1,29 @@
+.backTop
+    position: fixed
+    bottom: 20px
+    right: 40px
+    background-color: $col-ondes-radio
+    padding: 16px
+    border-radius: 50%
+    border: 2px solid $col-dark-blue
+    visibility: hidden
+    opacity: 0
+    transition: 0.2s ease
+    z-index: 4
+    cursor: pointer
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25)
+    &:hover
+        transform: translateY(-13px)
+    &:active
+        background-color: $col-dark-blue !important
+    &__icon
+        filter: grayscale(100%) brightness(0%) contrast(100%)
+        rotate: (150deg)
+        width: 16px
+        position: relative
+        right: 2px
+        top: 3px
+.backTop.active
+    visibility: visible
+    opacity: 1
+    transform: translateY(-10px)

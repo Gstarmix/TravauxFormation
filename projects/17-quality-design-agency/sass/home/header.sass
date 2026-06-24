@@ -1,0 +1,41 @@
+.header
+    min-height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    gap: $space-sm
+    padding: $space-sm $br-normal
+    max-width: $container-max
+    margin-inline: auto
+    &__img
+        width: 80px
+        height: auto
+    &__nav
+        &_menu
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-end
+            &_li
+                &_a
+                    display: inline-block
+                    color: $col-grey
+                    font-weight: 700
+                    letter-spacing: 0.04em
+                    padding: 12px 18px
+                    border-radius: $radius-sm
+                    transition: background-color $transition, color $transition
+                    &:hover,
+                    &:focus-visible
+                        background-color: $col-yellow
+                        color: $col-black
+    @media (max-width: $bp-tablet)
+        justify-content: center
+        text-align: center
+        &__nav_menu
+            justify-content: center
+    @media (max-width: $bp-mobile)
+        &__nav_menu
+            gap: 2px
+            &_li_a
+                padding: 10px 12px

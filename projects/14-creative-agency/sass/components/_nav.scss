@@ -1,0 +1,104 @@
+.header {
+  background-color: $color-main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-inline: $spacing-main;
+  .logo img {
+    width: 12.5rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: table;
+      text-align: center;
+      li {
+        display: inline;
+        margin-right: $spacing-md;
+        position: relative;
+        padding-block: $spacing-md;
+        a {
+          color: $color-white;
+          position: relative;
+          padding-block: inherit;
+          &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $color-white;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          &:hover:after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .icons {
+    i {
+      cursor: pointer;
+      margin-left: 0.5rem;
+      height: 3rem;
+      line-height: 3rem;
+      width: 3rem;
+      text-align: center;
+      font-size: 1.3rem;
+      color: $color-main;
+      border-radius: 50%;
+      background-color: $color-white;
+      &:hover {
+        color: $color-secondary-2;
+        background: $color-secondary-1;
+        transform: rotate(360deg);
+      }
+    }
+    #menu-bars {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $color-main;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: $spacing-md;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .nav ul li a {
+    display: block;
+    padding: $spacing-lg;
+    margin: $spacing-md;
+    font-size: 2rem;
+    background-color: $color-input-bg;
+    color: $color-main;
+    text-align: center;
+  }
+}

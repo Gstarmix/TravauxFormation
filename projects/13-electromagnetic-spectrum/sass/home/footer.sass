@@ -1,0 +1,56 @@
+.footer
+    background-color: $col-dark-blue
+    background-image: url("../images/pattern.png")
+    height: 50vh
+    position: relative
+    z-index: -2
+    font-size: .8rem
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 1000px)
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            row-gap: 1rem
+    &__bottom
+        background-color: rgb(5, 10, 15, 1)
+        text-align: center
+        padding-block: 15px
+        position: absolute
+        bottom: 0
+        width: 100%
+        &_copyright
+            color: $col-white
+            line-height: 1.6
+            &_link
+                color: $col-ondes-radio
+                transition: color var(--transition), opacity var(--transition)
+                &:is(:hover, :focus-visible)
+                    opacity: 0.8
+                    text-decoration: underline
+        &_list
+            display: flex
+            justify-content: center
+            gap: 15px
+            --color-before-background: rgba(127, 0, 0, 1)
+            &_link
+                padding-inline-start: 20px
+                color: $col-white
+                position: relative
+                transition: opacity var(--transition)
+                &:is(:hover, :focus-visible)
+                    opacity: 0.75
+                    text-decoration: underline
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 10px
+                    height: 10px
+                    background-color: var(--color-before-background)
+                    border-radius: 50%

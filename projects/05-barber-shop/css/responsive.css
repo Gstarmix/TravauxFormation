@@ -1,0 +1,146 @@
+@media screen and (min-width:960px) {
+    body {
+        font-size: 1.3rem;
+    }
+    .grid_services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content1"
+            "content2 content3"
+            "content2 content3"
+            "content2 content3";
+    }
+    .grid_services .content3 {
+        display: block;
+    }
+    .grid_more_hair {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content1 content1"
+            "content2 content3 content4";
+    }
+    .grid_logo_services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content2"
+            "content3 content4"
+            "content5 content6";
+    }
+    .grid_photo6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content2"
+            "content3 .";
+    }
+}
+@media screen and (min-width:1140px) {
+    body {
+        font-size: 1.1rem;
+    }
+    #header,
+    #quality {
+        border-bottom: 0;
+    }
+    #header #entete {
+    position: relative;
+    }
+    #header #menu_haut #burger {
+        display: none;
+    }
+    #header #menu_haut ul li {
+        flex: none;
+    }
+    #header #menu_haut ul li a {
+        padding: 10px 15px;
+        width: initial;
+        min-width: initial;
+        text-align: justify;
+        background-color: initial;
+        border: 0;
+    }
+    #header nav ul {
+        display: flex;
+    }
+    #header nav i {
+        display: none;
+    }
+    .grid_welcome {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content2";
+    }
+    #welcome #photo {
+        margin-bottom: 100px;
+    }
+    #welcome #photo .circle_red {
+        height: 160px;
+        width: 160px;
+        left: 100%;
+    }
+    .grid_services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content1 content1"
+            "content2 content3 content4"
+            "content2 content3 content4"
+            "content2 content3 content4";
+    }
+    .grid_services .content4 {
+        display: block;
+    }
+    .grid_logo_services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content2 content3"
+            "content4 content4 content5";
+    }
+    #more_hair #txt_more_hair {
+        display: inherit;
+        align-content: center;
+    }
+    #client .grid_photo5 {
+        display: flex;
+        gap: 30px;
+    }
+    #blog .grid_photo6 {
+        display: flex;
+    }
+    .grid_footer .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "content1 content2 content3"
+            "content1 content2 content3";
+    }
+    .grid_footer .wrapper .content2 {
+        position: relative;
+        left: 50%;
+        transform: translate(-25%,0);
+    }
+    #footer input[type="email"] {
+        width: 70%;
+    }
+}

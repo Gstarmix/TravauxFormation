@@ -1,0 +1,187 @@
+@use "sass:color"
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-light-webfont.woff2") format("woff2")
+    font-weight: 300
+    font-display: swap
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-regular-webfont.woff2") format("woff2")
+    font-weight: 400
+    font-display: swap
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-semibold-webfont.woff2") format("woff2")
+    font-weight: 600
+    font-display: swap
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-bold-webfont.woff2") format("woff2")
+    font-weight: 700
+    font-display: swap
+@font-face
+    font-family: Poppins
+    src: url("../fonts/poppins/poppins-black-webfont.woff2") format("woff2")
+    font-weight: 900
+    font-display: swap
+$bg: #191e23
+$light: #fff
+$sticker-bg: lightblue
+$button-bg: lightgreen
+$text-muted: #8a9099
+$radius: 10px
+$radius-sm: 6px
+$shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.18)
+$shadow-card: 0 6px 20px rgba(0, 0, 0, 0.25)
+$transition: .2s ease
+.wrapper
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 1.25rem
+    width: 100%
+.body
+    background-color: $bg
+    min-height: 100vh
+    font-family: "Poppins", sans-serif
+    line-height: 1.6
+    color: $light
+    overflow-x: hidden
+    -webkit-font-smoothing: antialiased
+img
+    display: block
+    max-width: 100%
+    height: auto
+a
+    transition: background-color $transition, transform $transition, color $transition
+    &:focus-visible
+        outline: 3px solid color.adjust($button-bg, $lightness: 5%)
+        outline-offset: 3px
+        border-radius: $radius-sm
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 24rem
+    padding: 2rem 1.25rem
+    background-image: url("../images/space-min.webp")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    @media screen and (min-width: 576px)
+        min-height: 30rem
+    .title
+        font-size: clamp(1.75rem, 6vw, 4rem)
+        line-height: 1.1
+        text-transform: uppercase
+        letter-spacing: .15em
+        color: $light
+        border: 2px solid $light
+        padding: 0.65rem 1.4rem
+        font-weight: 900
+        border-radius: $radius-sm
+        text-align: center
+.articles
+    padding-bottom: 4rem
+    &__title
+        text-align: center
+        padding: 2.5rem 0 1.5rem
+        font-size: clamp(2rem, 6vw, 3rem)
+        line-height: 1.2
+        letter-spacing: .03em
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        text-transform: uppercase
+    &__list
+        display: grid
+        grid-template-columns: 1fr
+        gap: 2rem
+        @media screen and (min-width: 600px)
+            grid-template-columns: repeat(2, 1fr)
+            gap: 1.5rem
+        @media screen and (min-width: 992px)
+            grid-template-columns: repeat(3, 1fr)
+            gap: 1.5rem
+        &_article
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            background-color: color.adjust($bg, $lightness: 4%)
+            border-radius: $radius
+            overflow: hidden
+            box-shadow: $shadow-card
+            transition: transform $transition, box-shadow $transition
+            &:hover
+                transform: translateY(-4px)
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35)
+            &_picture
+                display: block
+                position: relative
+                width: 100%
+                img
+                    width: 100%
+                    aspect-ratio: 16 / 10
+                    object-fit: cover
+                &_featured
+                    padding: 8px 15px
+                    background-color: $light
+                    color: $bg
+                    text-transform: uppercase
+                    letter-spacing: 2px
+                    position: absolute
+                    top: 1rem
+                    left: 0
+                    font-size: .75rem
+                    font-weight: 600
+                    border-radius: 0 $radius-sm $radius-sm 0
+                    box-shadow: $shadow-soft
+                &_deco
+                    background-image: url(../images/band_fold_return.png)
+                    background-size: cover
+                    width: 6px
+                    height: 7px
+                    position: absolute
+                    left: 0
+                    top: calc(1rem + 2.1rem)
+                    transform: rotate(180deg)
+                    box-shadow: $shadow-soft
+            &_sticker
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: .5rem
+                background: $sticker-bg
+                color: $bg
+                margin: 1rem 1.25rem 0
+                padding: 10px 14px
+                border-radius: $radius-sm
+                width: calc(100% - 2.5rem)
+                &_category
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                    font-weight: 600
+                    font-size: .85rem
+                &_duration
+                    font-size: 0.8rem
+                    text-transform: capitalize
+                    color: color.adjust($sticker-bg, $lightness: -35%)
+            &_title
+                font-size: 1.2rem
+                line-height: 1.35
+                font-weight: 700
+                padding: 1rem 1.25rem .5rem
+            &_description
+                color: $text-muted
+                padding: 0 1.25rem 1.5rem
+                line-height: 1.6
+            &_button
+                margin: auto 1.25rem 1.5rem
+                padding: 12px 18px
+                background-color: $button-bg
+                border-radius: $radius-sm
+                text-decoration: none
+                color: #14361a
+                font-weight: 600
+                letter-spacing: .02em
+                &:hover
+                    background-color: color.adjust($button-bg, $lightness: -12%)
+                &:active
+                    transform: translateY(1px)

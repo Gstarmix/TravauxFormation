@@ -1,0 +1,127 @@
+.footer {
+  background-color: $color-main;
+  color: $color-white;
+  padding: $spacing-md;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: $spacing-main;
+    &__section {
+      &__wrapper {
+        text-align: center;
+        &__title {
+          position: relative;
+          display: inline-block;
+          font-size: $spacing-lg;
+          margin-bottom: $spacing-md;
+          &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: $color-white;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      &__menu {
+        li {
+          margin-block: 0.5rem;
+          a {
+            color: $color-link;
+            font-size: $font-size-sm;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+              color: $color-white;
+            }
+          }
+        }
+      }
+      &__social {
+        display: flex;
+        li {
+          margin: 0.5rem 1rem;
+          i {
+            color: $color-link;
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+      }
+      &__form {
+        display: flex;
+        margin-block: 0.5rem;
+        input {
+          display: block;
+          padding: 0.5rem;
+          border: none;
+          border-radius: 0.3rem;
+          background-color: $color-input-bg;
+          color: $color-white;
+          font-size: $font-size-sm;
+          margin-inline: 0.2rem;
+          &:focus {
+            outline: none;
+            border: none;
+            box-shadow: 0 0 0 2px $color-secondary-2;
+          }
+        }
+        button {
+          @include button-styles(
+            $background-color: $color-secondary-1,
+            $text-color: $color-white,
+            $padding: 0.5rem 1rem,
+            $font-size: $font-size-sm,
+            $border-radius: 0.3rem
+          );
+        }
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    font-size: $font-size-base;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 2rem;
+    &__container {
+      flex-direction: column;
+      &__section {
+        margin-bottom: 1.5rem;
+        &__wrapper {
+          text-align: left;
+          margin-bottom: $spacing-md;
+          &__title {
+            font-size: $font-size-base;
+          }
+        }
+        &__menu {
+          display: none;
+        }
+        &__social {
+          justify-content: center;
+        }
+        &__form {
+          margin: $spacing-md 0;
+          input {
+            width: 100%;
+            margin-inline: 0;
+          }
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__copyright {
+      font-size: 0.8rem;
+    }
+  }
+}

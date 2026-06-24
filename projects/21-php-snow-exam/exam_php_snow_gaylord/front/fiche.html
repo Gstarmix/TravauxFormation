@@ -1,0 +1,18 @@
+<section id="produits" class="placement">
+	<h1><?php if(isset($nom_produit)){echo $nom_produit;} ?></h1>
+
+	<article>
+		<figure>
+			<?php if(isset($photo_produit)){echo $photo_produit;} ?>
+		</figure>
+		<div>
+			<?php if(isset($description_produit)){echo $description_produit;} ?>
+			<?php if(isset($prix_produit)){echo $prix_produit;} ?>
+		</div>
+	</article>
+
+	<div class="call_to_action">
+		<a>AJOUTER AU PANIER</a>
+	</div>
+
+</section>	

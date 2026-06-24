@@ -1,0 +1,28 @@
+:root {
+    --white1: #fff;
+    --white2: #f4f4f4;
+    --black1: #000;
+    --black2: #1a1b1f;
+    --black3: #222222;
+    --grey1: #f4f4f4;
+    --pad_x: 10%;
+    --fs-07: 0.78rem;
+    --fs-08: 0.88rem;
+    --fs-base: 1rem;
+    --fs-lead: clamp(1.4rem, 1.1rem + 1.4vw, 2rem);
+    --fs-h2: clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem);
+    --fs-h1: clamp(2rem, 1.5rem + 2.4vw, 2.8rem);
+    --fs-logo: 1.5rem;
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+    --radius: 8px;
+    --radius-lg: 14px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --transition: .2s ease;
+    --container: 1140px;
+}

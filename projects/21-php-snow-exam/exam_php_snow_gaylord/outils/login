@@ -1,0 +1,28 @@
+function login($login,$password)
+	{	
+	$connexion=connexion();
+	$login=security($login);
+	$password=security($password);
+
+	$requete="SELECT * FROM comptes WHERE login_compte= '" . $login . "' 
+				AND pass_compte=SHA1('" . $password . "')";
+	//echo $requete;
+	$resultat=mysqli_query($connexion, $requete) or die(mysqli_connect_error());
+	$nb=mysqli_num_rows($resultat);
+	
+	if($nb==0)
+		{
+		return false;
+		}
+	else
+		{ 
+		$ligne=mysqli_fetch_object($resultat);
+		$_SESSION['id_compte']=$ligne->id_compte;
+		$_SESSION['prenom_compte']=$ligne->prenom_compte;    
+		$_SESSION['nom_compte']=$ligne->nom_compte;
+		$_SESSION['retour_bo']="<a id=\"retour_bo\" href=\"../admin/admin.php\"><span class=\"dashicons dashicons-arrow-left-alt\"></span></a>\n";
+		header("Location:../admin/admin.php");    
+		return true;
+		}		
+	mysqli_close($connexion); 	
+	}

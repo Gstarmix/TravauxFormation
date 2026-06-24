@@ -1,0 +1,58 @@
+\:root
+    --transition: 0.2s ease
+body
+    color: $col-black
+    line-height: 1.6
+    font-size: 1rem
+    -webkit-font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+h1,
+h2
+    line-height: 1.25
+    letter-spacing: -0.01em
+h2
+    color: rgb(32, 32, 32)
+    font-weight: 700
+    font-size: clamp(2rem, 5vw, 3rem)
+img,
+video,
+canvas
+    max-width: 100%
+\:focus-visible
+    outline: 3px solid $col-ondes-radio
+    outline-offset: 3px
+    border-radius: 4px
+.container
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 25px
+.alternate
+    animation: move 3s linear infinite alternate
+.alternateReverse
+    animation: move 3s linear infinite alternate-reverse
+    @keyframes move
+        0%
+            transform: translate(0, 0)
+        50%
+            transform: translate(-5px, 10px)
+        100%
+            transform: translate(5px, 20px)
+.circle
+    position: absolute
+    bottom: 40%
+    width: 100%
+    z-index: -1
+    animation: ondulation 1s ease-in-out infinite
+@keyframes ondulation
+    0%
+        transform: scale(1)
+        opacity: 1
+    100%
+        transform: scale(1.5)
+        opacity: 0
+@keyframes rotate360
+    0%
+        transform: translate(-50%, -56%) rotate(0)
+    100%
+        transform: translate(-50%, -56%) rotate(1turn)

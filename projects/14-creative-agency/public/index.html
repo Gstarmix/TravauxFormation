@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schmoulbrouk</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><img
+          src="images/logo/schmoul-association.png"
+          alt="Logo du Festival Schmoulbrouk"
+      /></a>
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <a class="active" href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a class="" href="programme.html">Programmation</a>
+          </li>
+          <li>
+            <a class="" href="#">Infos pratiques</a>
+          </li>
+          <li>
+            <a class="" href="#">Rétroviseur</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="slider__shadow slider__shadow--left"></div>
+        <div class="slider__shadow slider__shadow--right"></div>
+
+        <div class="slider__text">
+          <h1>20<sup>ème</sup> Festival du Schmoul</h1>
+          <p>VENDREDI 27 JANVIER <br />SAMEDI 28 JANVIER</p>
+          <p>BAIN-DE-BRETAGNE (35)</p>
+        </div>
+
+        <div class="slider__prices">
+          <div class="slider__price">
+            <h3>Pass soirée</h3>
+            <p>26€</p>
+            <div class="slider__quantity">
+              <label for="soiree-quantity">Quantité :</label>
+              <select id="soiree-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button class="slider__add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="slider__price">
+            <h3>Pass week-end</h3>
+            <p>44€</p>
+            <div class="slider__quantity">
+              <label for="weekend-quantity">Quantité :</label>
+              <select id="weekend-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button class="slider__add-to-cart">Ajouter au panier</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <aside class="sidebar">
+          <section class="social-buttons">
+            <div
+              class="social-buttons__button social-buttons__button--facebook"
+            >
+              <div class="social-buttons__icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <span>Facebook</span>
+            </div>
+            <div class="social-buttons__button social-buttons__button--twitter">
+              <div class="social-buttons__icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <span>Twitter</span>
+            </div>
+            <div
+              class="social-buttons__button social-buttons__button--instagram"
+            >
+              <div class="social-buttons__icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </div>
+          </section>
+
+          <section class="date">
+            <div class="date__text">
+              <h2>Prochain Festival :</h2>
+            </div>
+            <div class="date__countdown">
+              <div class="countdown-item">
+                <span id="days">0</span>
+                <p>Jours</p>
+              </div>
+              <div class="countdown-item">
+                <span id="hours">0</span>
+                <p>Heures</p>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds">0</span>
+                <p>Secondes</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="video">
+            <div class="video-wrapper">
+              <video poster="images/slider/shmoulbrouk-slider-2.jpg">
+                <source src="videos/trailer.mp4" type="video/mp4" />
+              </video>
+              <button class="play-button"></button>
+            </div>
+            <div class="video-popup" id="video-popup">
+              <div class="video-popup__overlay"></div>
+              <div class="video-popup__content">
+                <button class="video-popup__close-btn">&times;</button>
+                <video controls poster="images/slider/shmoulbrouk-slider-2.jpg">
+                  <source src="videos/trailer.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </section>
+
+          <a
+            class="twitter-timeline"
+            data-lang="fr"
+            data-height="760"
+            data-theme="light"
+            href="https://twitter.com/festivalschmoul?ref_src=twsrc%5Etfw"
+            >Tweets by festivalschmoul</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </aside>
+
+        <section class="about">
+          <h2>À propos du Festival</h2>
+          <p>
+            Depuis 2010, le Festival Schmoulbrouk rassemble des fans de musique
+            du monde entier pour célébrer la diversité et l'unité à travers les
+            sons envoûtants de la scène musicale internationale. Situé dans un
+            cadre pittoresque, le festival offre non seulement une expérience
+            musicale inégalée, mais aussi des activités ludiques et des
+            expériences culinaires pour tous les goûts.
+          </p>
+          <button>Découvrez la programmation</button>
+        </section>
+
+        <section class="gallery">
+          <h2>Immersion visuelle au Festival</h2>
+          <div class="gallery__grid-images">
+            <img
+              class="gal-1"
+              src="images/gallery/gal-1.png"
+              alt="Ambiance du festival vue de la scene principale"
+              data-src="images/gallery/gal-1.png"
+              data-index="0"
+            />
+            <img
+              class="gal-2"
+              src="images/gallery/gal-2.png"
+              alt="Public en concert au coucher du soleil"
+              data-src="images/gallery/gal-2.png"
+              data-index="1"
+            />
+            <img
+              class="gal-3"
+              src="images/gallery/gal-3.png"
+              alt="Artiste sur scene pendant un live"
+              data-src="images/gallery/gal-3.png"
+              data-index="2"
+            />
+            <img
+              class="gal-4"
+              src="images/gallery/gal-4.png"
+              alt="Foule rassemblee devant la grande scene"
+              data-src="images/gallery/gal-4.png"
+              data-index="3"
+            />
+            <img
+              class="gal-5"
+              src="images/gallery/gal-5.png"
+              alt="Jeux de lumiere durant un concert nocturne"
+              data-src="images/gallery/gal-5.png"
+              data-index="4"
+            />
+            <img
+              class="gal-6"
+              src="images/gallery/gal-6.png"
+              alt="Espace de detente et de restauration du festival"
+              data-src="images/gallery/gal-6.png"
+              data-index="5"
+            />
+            <img
+              class="gal-7"
+              src="images/gallery/gal-7.png"
+              alt="Festivaliers profitant de l'ambiance"
+              data-src="images/gallery/gal-7.png"
+              data-index="6"
+            />
+            <img
+              class="gal-8"
+              src="images/gallery/gal-3.png"
+              alt="Vue d'ensemble du site du festival"
+              data-src="images/gallery/gal-3.png"
+              data-index="7"
+            />
+            <img
+              class="gal-9"
+              src="images/gallery/gal-4.png"
+              alt="Moment de partage entre festivaliers"
+              data-src="images/gallery/gal-4.png"
+              data-index="8"
+            />
+            <img
+              class="gal-10"
+              src="images/gallery/gal-5.png"
+              alt="Final de concert sous les projecteurs"
+              data-src="images/gallery/gal-5.png"
+              data-index="9"
+            />
+          </div>
+          <div id="image-popup" class="image-popup">
+            <div class="image-popup__overlay"></div>
+            <img class="image-popup__image" src="" alt="" />
+            <button class="image-popup__close-btn">X</button>
+            <button class="image-popup__nav-btn image-popup__nav-btn--prev">
+              &lt;
+            </button>
+            <button class="image-popup__nav-btn image-popup__nav-btn--next">
+              &gt;
+            </button>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <h2 class="testimonials__title">
+            Retours d'expériences des participants
+          </h2>
+          <div class="testimonials__container swiper">
+            <div class="testimonials__slide-content swiper-wrapper">
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile1.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Camille Durand</h2>
+                  <p class="testimonials__description">
+                    Une ambiance incroyable et une programmation au top. Trois
+                    jours de musique et de rencontres que je ne suis pas pres
+                    d'oublier.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile2.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Lucas Moreau</h2>
+                  <p class="testimonials__description">
+                    L'organisation est impeccable et l'accueil chaleureux. On
+                    sent que tout est pense pour le confort des festivaliers.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile3.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Sofia Lemoine</h2>
+                  <p class="testimonials__description">
+                    Une scene magnifique et un son d'une grande qualite. La
+                    diversite des artistes invites m'a vraiment surprise.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile4.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Hugo Bernard</h2>
+                  <p class="testimonials__description">
+                    Le cadre est superbe et les espaces de restauration varies.
+                    Je reviendrai l'an prochain avec toute la bande d'amis.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile5.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Emma Petit</h2>
+                  <p class="testimonials__description">
+                    Des decouvertes musicales a chaque concert et une energie
+                    contagieuse dans le public. Un festival a vivre au moins une
+                    fois.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+
+              <div class="testimonials__card swiper-slide">
+                <div class="testimonials__image-content">
+                  <div class="testimonials__card-image">
+                    <img
+                      src="images/testimonials/profile6.jpg"
+                      alt=""
+                      class="testimonials__card-img"
+                    />
+                  </div>
+                </div>
+                <div class="testimonials__card-content">
+                  <h2 class="testimonials__name">Nathan Roussel</h2>
+                  <p class="testimonials__description">
+                    Une experience humaine autant que musicale. Le benevolat et
+                    la bonne humeur generale rendent ce festival unique.
+                  </p>
+                  <button class="testimonials__button">Voir plus</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next testimonials__swiper-navBtn"></div>
+            <div class="swiper-button-prev testimonials__swiper-navBtn"></div>
+          </div>
+        </section>
+
+        <section class="partners">
+          <h2 class="partners__title">
+            Partenaires qui partagent notre vision
+          </h2>
+          <div class="partners__container swiper">
+            <div class="partners__slide-content swiper-wrapper">
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo1.png"
+                  alt="Logo partenaire 1"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo2.png"
+                  alt="Logo partenaire 2"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo3.png"
+                  alt="Logo partenaire 3"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo4.png"
+                  alt="Logo partenaire 4"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo5.png"
+                  alt="Logo partenaire 4"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo1.png"
+                  alt="Logo partenaire 1"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo2.png"
+                  alt="Logo partenaire 2"
+                  class="partners__logo-img"
+                />
+              </div>
+              <div class="partners__logo swiper-slide">
+                <img
+                  src="images/partners/logo3.png"
+                  alt="Logo partenaire 3"
+                  class="partners__logo-img"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-button-next partners__swiper-navBtn"></div>
+            <div class="swiper-button-prev partners__swiper-navBtn"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Conditions d'utilisation
+            </h3>
+          </div>
+          <ul class="footer__container__section__menu">
+            <li><a href="#">Cookies et protection des données</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Suivez-nous
+            </h3>
+          </div>
+          <ul class="footer__container__section__social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container__section">
+          <div class="footer__container__section__wrapper">
+            <h3 class="footer__container__section__wrapper__title">
+              Newsletter
+            </h3>
+          </div>
+          <form class="footer__container__section__form">
+            <input type="email" placeholder="Votre email" />
+            <button type="submit">Abonnez-vous</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2023 Schmoulbrouk. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/testimonials.js"></script>
+  </body>
+</html>

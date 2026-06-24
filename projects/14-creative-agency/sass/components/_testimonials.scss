@@ -1,0 +1,79 @@
+.testimonials {
+  grid-area: testimonials;
+  padding: $spacing-xl;
+  &__title {
+    font-size: $font-size-lg;
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+  &__container {
+    position: relative;
+  }
+  &__slide-content {
+    display: flex;
+  }
+  &__card {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 20rem;
+    margin-right: $spacing-md;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+  }
+  &__image-content {
+    position: relative;
+  }
+  &__card-image {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  &__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__card-content {
+    padding: $spacing-lg;
+  }
+  &__name {
+    font-size: $font-size-md;
+    margin-bottom: $spacing-md;
+  }
+  &__description {
+    font-size: $line-height-sm;
+    margin-bottom: $spacing-md;
+  }
+  &__button {
+    @include button-styles();
+  }
+  &__swiper-navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10;
+    color: $color-main !important;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  &__swiper-pagination {
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    text-align: center;
+  }
+}

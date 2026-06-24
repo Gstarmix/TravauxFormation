@@ -1,0 +1,237 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+:root{
+	--couleur-fond-sombre:#313131;
+	--couleur-accent:#e53935;
+	--couleur-texte:#1c1c1c;
+	--couleur-texte-clair:#c3c3c3;
+	--rayon:8px;
+	--ombre-douce:0 4px 14px rgba(0,0,0,.12);
+	--transition:.2s ease;
+	--largeur-max:1280px;
+}
+html{
+	scroll-behavior:smooth;
+}
+body{
+	font-family:arial,sans-serif;
+	font-size:1rem;
+	line-height:1.6;
+	color:var(--couleur-texte);
+}
+img{
+	max-width:100%;
+	height:auto;
+	display:block;
+}
+h1{
+	font-size:2.25rem;
+	line-height:1.2;
+	letter-spacing:.02em;
+	padding:20px 0;
+}
+h2{
+	font-size:1.3rem;
+	line-height:1.4;
+	font-weight:400;
+	padding:10px 0;
+}
+a{
+	transition:color var(--transition), background-color var(--transition);
+}
+a:focus-visible,
+label:focus-visible,
+.btn a:focus-visible{
+	outline:3px solid var(--couleur-accent);
+	outline-offset:3px;
+	border-radius:4px;
+}
+.btn{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	padding:15px 0;
+}
+.btn a{
+	padding:10px 22px;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+	border:2px solid #000;
+	border-radius:var(--rayon);
+	transition:color var(--transition), background-color var(--transition), border-color var(--transition);
+}
+.btn a:hover{
+	color:#fff;
+	background-color:var(--couleur-accent);
+	border-color:var(--couleur-accent);
+}
+#header{
+	background-color:var(--couleur-fond-sombre);
+	height:60px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 5%;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:100;
+	box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+#header img{
+	height:40px;
+	width:auto;
+}
+#header ul{
+	display:flex;
+	list-style-type: none;
+	gap:4px;
+}
+#header a{
+	text-decoration:none;
+	color:#fff;
+	padding:10px 14px;
+	border-radius:var(--rayon);
+	letter-spacing:.03em;
+}
+#header a:hover{
+	background-color:var(--couleur-accent);
+}
+#header #burger{
+	color: #fff;
+}
+#burger {
+	color: #fff;
+	display: none;
+	cursor:pointer;
+}
+#menu_haut .dashicons {
+	font-size: 3rem;
+}
+#menu_haut ul{
+	display: flex;
+}
+#header input[type=checkbox]:checked + ul{
+	display: flex;
+}
+#menu_haut input {
+	display:none;
+}
+#slider{
+	position:relative;
+}
+#slider h1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index:10;
+	color:#fff;
+	font-size:clamp(2.25rem, 6vw, 3.75rem);
+	font-weight:normal;
+	letter-spacing:.04em;
+	text-align:center;
+	text-shadow:0 2px 16px rgba(0,0,0,.55);
+	width:90%;
+}
+#slider img{
+	width:100%;
+	height:100vh;
+	object-fit: cover;
+	object-position: right center;
+}
+#produits{
+	text-align:center;
+	padding:80px 5%;
+	max-width:var(--largeur-max);
+	margin:0 auto;
+}
+#produits h2{
+	max-width:680px;
+	margin:0 auto;
+	color:#555;
+}
+#produits figure{
+	margin-top:10px;
+}
+#produits img{
+	width:100%;
+	padding:20px 0;
+	border-radius:var(--rayon);
+}
+#produits figcaption{
+	letter-spacing:.05em;
+	font-weight:bold;
+	padding-top:8px;
+}
+#temoignage{
+	padding:100px 45% 100px 10%;
+	background:url("../images/vetements-snowboard.jpg") no-repeat right top;
+	background-size:cover;
+	color:#fff;
+}
+#temoignage h1{
+	letter-spacing:.04em;
+}
+#temoignage sup{
+	font-size:1.15rem;
+}
+#temoignage p{
+	padding:10px 0;
+	line-height:1.7;
+}
+#blog{
+	display:flex;
+	padding:80px 5%;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	gap:24px 0;
+	max-width:var(--largeur-max);
+	margin:0 auto;
+}
+#blog h1{
+	width:100%;
+	text-align:center;
+}
+#blog figure{
+	width:23%;
+	overflow:hidden;
+	border-radius:var(--rayon);
+	box-shadow:var(--ombre-douce);
+}
+#blog figure img{
+	width:100%;
+	transition:transform .3s ease;
+}
+#blog figure:hover img{
+	transform:scale(1.05);
+}
+#blog figcaption{
+	padding:12px 14px;
+	font-size:.9rem;
+	color:#555;
+}
+#footer{
+	display:flex;
+	flex-wrap:wrap;
+	gap:12px 24px;
+	justify-content:space-between;
+	align-items:center;
+	padding:40px 5%;
+	background-color:var(--couleur-fond-sombre);
+	color:var(--couleur-texte-clair);
+	font-size:0.85rem;
+}
+#footer p{
+	display:flex;
+	align-items:center;
+	gap:8px;
+}
+#footer img{
+	display:inline-block;
+}

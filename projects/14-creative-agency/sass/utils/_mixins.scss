@@ -1,0 +1,29 @@
+@mixin button-styles(
+  $background-color: $color-secondary-1,
+  $text-color: $color-white,
+  $font-size: $font-size-base,
+  $font-weight: $font-weight-bold,
+  $padding: $spacing-sm $spacing-md,
+  $border-radius: 0.3rem,
+  $hover-background-color: lighten($color-secondary-1, 10%)
+) {
+  background-color: $background-color;
+  color: $text-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding: $padding;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $hover-background-color;
+  }
+  &:focus {
+    border-color: $color-secondary-2;
+    box-shadow: 0 0 0 0.1rem $color-secondary-2;
+  }
+  &::placeholder {
+    color: $color-link;
+  }
+}

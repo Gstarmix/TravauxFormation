@@ -1,0 +1,19 @@
+:root{
+--color_1:rgba(30,30,30,1);
+--color_2:rgba(212,63,63,1);
+--color_3:rgba(150,150,150,1);
+--color_4: rgba(243,243,243,1);
+--colorgris: var(--color_3);
+--pad_x:10%;
+--max_width: 1200px;
+--space-1: 0.5rem;
+--space-2: 1rem;
+--space-3: 1.5rem;
+--space-4: 2rem;
+--space-5: 3rem;
+--radius-sm: 6px;
+--radius-md: 10px;
+--shadow-soft: 0 4px 16px rgba(30,30,30,0.08);
+--shadow-hover: 0 8px 24px rgba(30,30,30,0.14);
+--transition: 0.2s ease;
+}

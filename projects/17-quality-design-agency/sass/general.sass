@@ -1,0 +1,94 @@
+html
+    scroll-behavior: smooth
+body
+    font-family: 'Poppins', 'Open Sans', sans-serif
+    background-color: $col-white
+    color: $col-grey
+    line-height: 1.6
+    -webkit-font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+img
+    max-width: 100%
+    height: auto
+h1, h2
+    line-height: 1.2
+    letter-spacing: 0.01em
+p
+    line-height: 1.6
+.container
+    width: 100%
+    max-width: $container-max
+    margin-inline: auto
+a
+    transition: background-color $transition, color $transition, opacity $transition
+a:focus-visible
+    outline: 3px solid $col-grey
+    outline-offset: 3px
+    border-radius: $radius-sm
+@media (prefers-reduced-motion: reduce)
+    html
+        scroll-behavior: auto
+    *,
+    *::before,
+    *::after
+        animation-duration: 0.001ms !important
+        animation-iteration-count: 1 !important
+        transition-duration: 0.001ms !important
+.rotate
+    animation-name: spin
+    animation-duration: 8s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+.content1
+    grid-area: content1
+.content2
+    grid-area: content2
+.content3
+    grid-area: content3
+.content4
+    grid-area: content4
+.content5
+    grid-area: content5
+.content6
+    grid-area: content6
+.content7
+    grid-area: content7
+.content8
+    grid-area: content8
+.content9
+    grid-area: content9
+.content10
+    grid-area: content10
+.p0
+    padding: 0 !important
+.w100
+    width: 100%
+.bottleDescription
+    position: relative
+    bottom: 12px
+    text-align: start
+    font-size: 1.3rem !important
+    line-height: 1.4
+    padding: $br-tiny $br-normal 0 $br-small !important
+    &::after
+        content: ""
+        position: absolute
+        left: 81%
+        top: -8%
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+        border-bottom: 6px solid $col-grey
+.bottleDescription span
+    font-size: 0.6rem
+    position: relative
+    bottom: 7px
+    left: 145px
+.bottleDescription span.white
+    color: $col-white
+.bottleDescription span.yellow
+    color: $col-yellow

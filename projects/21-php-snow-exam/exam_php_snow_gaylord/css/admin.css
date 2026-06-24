@@ -1,0 +1,157 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+a,input, textarea{
+	outline:none;
+}
+body{
+	font-family:arial,sans-serif;
+	font-size:1em;
+	overflow:hidden;
+}
+#zone_gauche{
+	width:300px;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+	background:#d4d4d4;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	padding:0 1%;
+}
+#logo{
+	position:absolute;
+	top:50px;
+	left:50%;
+	transform:translate(-50%,0);
+	z-index:auto;
+}
+#menu_gauche{
+	width:100%;
+}
+#menu_gauche ul{
+	list-style-type:none;
+}
+#menu_gauche li{
+	margin:4px 0;
+}
+#menu_gauche a{
+	display:block;
+	padding:15px 30px;
+	background:#f2f2f2;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+}
+#menu_gauche a:hover:after{
+	content:"";
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translate(0,-50%);
+	border-right:20px solid #fff;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	z-index:auto;
+}
+#menu_gauche a:hover{
+	background:#c2c2c2;
+	color:#fff;
+}
+#zone_droite{
+	position:absolute;
+	top:0;
+	left:300px;
+	width:calc(100% - 300px);
+	height:100vh;
+	overflow:auto;
+	padding-top:100px;
+}
+#zone_droite header{
+	display:flex;
+	justify-content:space-between;
+	padding:20px 5%;
+	align-items:center;
+	position:fixed;
+	top:0;
+	right:0;
+	width:inherit;
+}
+#zone_droite h1 span{
+	text-transform:capitalize;
+}
+#zone_droite form{
+	width:80%;
+	margin:auto;
+}
+#zone_droite form label,
+#zone_droite form input,
+#zone_droite form textarea{
+	display:block;
+	padding:8px 10px;
+	width:100%;
+}
+#zone_droite form input,
+#zone_droite form textarea{
+	border:1px solid #d5d5d5;
+	border-radius:5px;
+	margin-bottom:10px;
+}
+#zone_droite form textarea{
+	min-height:200px;
+	max-width:100%;
+	min-width:100%;
+}
+#zone_droite form input[type=submit],
+#zone_droite form input[type=reset]{
+	width:auto;
+	background-color:#c2c2c2;
+	color:#fff;
+	margin:0 5px;
+}
+#zone_droite #boutons{
+	display:flex;
+	justify-content:center;
+	margin-top:40px;
+}
+#bravo{
+	color:green;
+}
+#warning{
+	color:orange;
+}
+#liste{
+	border:1px solid #d3d3d3;
+	border-collapse:collapse;
+	width:80%;
+	margin:40px auto 10px;
+	font-size:0.85em;
+}
+#liste th{
+	background-color:#e8e8e8;
+}
+#liste td,
+#liste th{
+	border:1px solid #d3d3d3;
+	padding:5px;
+	text-align:left;
+}
+#liste tr td:last-child{
+	width:150px;
+	text-align:center;
+}
+#liste img{
+	height:50px;
+	display:block;
+	margin:auto;
+}
+#liste img:hover{
+	transform:scale(4);
+	transition:0.35s all ease;
+}

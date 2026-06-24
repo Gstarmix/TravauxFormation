@@ -1,0 +1,386 @@
+{
+  "repo": "https://github.com/Gstarmix/TravauxFormation",
+  "pagesBaseUrl": "https://gstarmix.github.io/TravauxFormation/",
+  "generatedAt": "2026-06-22",
+  "projects": [
+    {
+      "slug": "00-coloured-lines",
+      "title": "Coloured Lines",
+      "description": "Page à blocs colorés pour travailler la mise en page en colonnes.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/00-coloured-lines/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/00-coloured-lines/",
+      "thumbnail": "projects/00-coloured-lines/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "01-snowboard-shop",
+      "title": "Snowboard Corporation",
+      "description": "Landing page d'une boutique de snowboard en intégration responsive.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "responsive"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/01-snowboard-shop/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/01-snowboard-shop/",
+      "thumbnail": "projects/01-snowboard-shop/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "02-flattool-saas-landing",
+      "title": "Flattools",
+      "description": "Landing page d'une application SaaS au style flat design.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/02-flattool-saas-landing/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/02-flattool-saas-landing/",
+      "thumbnail": "projects/02-flattool-saas-landing/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "03-design-studio",
+      "title": "Free design studio",
+      "description": "Site vitrine d'un studio de design en plusieurs sections.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/03-design-studio/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/03-design-studio/",
+      "thumbnail": "projects/03-design-studio/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "04-fooseshoes-shop",
+      "title": "Fooseshoes",
+      "description": "Boutique de chaussures avec catalogue et galerie de produits.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/04-fooseshoes-shop/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/04-fooseshoes-shop/",
+      "thumbnail": "projects/04-fooseshoes-shop/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "05-barber-shop",
+      "title": "Barberz",
+      "description": "Site d'un salon de barbier décliné en desktop, tablette et mobile.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "responsive"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/05-barber-shop/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/05-barber-shop/",
+      "thumbnail": "projects/05-barber-shop/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "06-corporate-business",
+      "title": "Business",
+      "description": "Page d'accueil corporate avec la typographie Montserrat intégrée.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/06-corporate-business/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/06-corporate-business/",
+      "thumbnail": "projects/06-corporate-business/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "07-fitlife-gym",
+      "title": "Fitlife",
+      "description": "Site d'une salle de sport avec cours, coachs et blog.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/07-fitlife-gym/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/07-fitlife-gym/",
+      "thumbnail": "projects/07-fitlife-gym/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "08-food-restaurant",
+      "title": "Food Website",
+      "description": "Site d'un restaurant avec menu, galerie et avis clients.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/08-food-restaurant/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/08-food-restaurant/",
+      "thumbnail": "projects/08-food-restaurant/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "09-grill-restaurant",
+      "title": "The Grill",
+      "description": "Landing page d'un restaurant grill avec hero plein écran, menu et équipe.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/09-grill-restaurant/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/09-grill-restaurant/",
+      "thumbnail": "projects/09-grill-restaurant/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "10-bem-methodology",
+      "title": "Exercice BEM",
+      "description": "Exercice de mise en pratique de la méthodologie BEM.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/10-bem-methodology/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/10-bem-methodology/",
+      "thumbnail": "projects/10-bem-methodology/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "11-goyave-landing",
+      "title": "Goyave",
+      "description": "Page d'atelier autour de SASS et de la composition visuelle.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/11-goyave-landing/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/11-goyave-landing/",
+      "thumbnail": "projects/11-goyave-landing/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "12-pokemon-landing",
+      "title": "Pokemon",
+      "description": "Landing page sur l'univers Pokémon, intégrée en SASS.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/12-pokemon-landing/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/12-pokemon-landing/",
+      "thumbnail": "projects/12-pokemon-landing/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "13-electromagnetic-spectrum",
+      "title": "Spectre électromagnétique",
+      "description": "Page pédagogique sur les ondes du spectre électromagnétique.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS",
+        "JS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/13-electromagnetic-spectrum/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/13-electromagnetic-spectrum/",
+      "thumbnail": "projects/13-electromagnetic-spectrum/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "14-creative-agency",
+      "title": "Schmoulbrouk",
+      "description": "Site d'agence créative en SASS avec galerie.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS",
+        "JS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/14-creative-agency/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/14-creative-agency/",
+      "thumbnail": "projects/14-creative-agency/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "15-personal-portfolio",
+      "title": "Portfolio",
+      "description": "Mon portfolio personnel avec sélecteur de thème de couleurs.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/15-personal-portfolio/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/15-personal-portfolio/",
+      "thumbnail": "projects/15-personal-portfolio/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "16-music-event",
+      "title": "Music Event",
+      "description": "Page d'un événement musical réalisée en examen d'intégration.",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/16-music-event/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/16-music-event/",
+      "thumbnail": "projects/16-music-event/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "17-quality-design-agency",
+      "title": "Quality Design",
+      "description": "Site vitrine d'agence réalisé en évaluation d'intégration.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "SASS"
+      ],
+      "category": "web",
+      "kind": "perso",
+      "demo": "projects/17-quality-design-agency/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/17-quality-design-agency/",
+      "thumbnail": "projects/17-quality-design-agency/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "18-emailing",
+      "title": "Emailing",
+      "description": "Intégration de courriels HTML avec CSS inline, trois travaux de formation.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "emailing"
+      ],
+      "category": "emailing",
+      "kind": "perso",
+      "demo": "projects/18-emailing/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/18-emailing/",
+      "thumbnail": "projects/18-emailing/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "19-photoshop-feel-coffee",
+      "title": "Photoshop Feel Coffee",
+      "description": "Composition visuelle réalisée sous Photoshop : montage et retouche.",
+      "tags": [
+        "Photoshop",
+        "Design"
+      ],
+      "category": "design",
+      "kind": "perso",
+      "demo": "projects/19-photoshop-feel-coffee/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/19-photoshop-feel-coffee/",
+      "thumbnail": "projects/19-photoshop-feel-coffee/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "20-wordpress-bonx-gaming",
+      "title": "WordPress Bonx Gaming",
+      "description": "Site gaming intégré, version HTML statique issue d'un projet WordPress.",
+      "tags": [
+        "WordPress",
+        "HTML",
+        "CSS",
+        "PHP"
+      ],
+      "category": "wordpress",
+      "kind": "perso",
+      "demo": "projects/20-wordpress-bonx-gaming/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/20-wordpress-bonx-gaming/",
+      "thumbnail": "projects/20-wordpress-bonx-gaming/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "21-php-snow-exam",
+      "title": "Examen PHP Snow",
+      "description": "Application PHP et MySQL avec back-office d'administration, réalisée en examen.",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS"
+      ],
+      "category": "php",
+      "kind": "perso",
+      "demo": "projects/21-php-snow-exam/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/21-php-snow-exam/",
+      "thumbnail": "projects/21-php-snow-exam/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "22-php-flattool",
+      "title": "Flattool PHP",
+      "description": "Intégration dynamique en PHP avec une partie front et une logique côté serveur.",
+      "tags": [
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
+      "category": "php",
+      "kind": "perso",
+      "demo": "projects/22-php-flattool/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/22-php-flattool/",
+      "thumbnail": "projects/22-php-flattool/thumb.png",
+      "complete": true
+    },
+    {
+      "slug": "23-laravel-inventory",
+      "title": "Laravel Inventory",
+      "description": "Application de gestion d'inventaire bâtie avec le framework Laravel.",
+      "tags": [
+        "Laravel",
+        "PHP",
+        "MySQL"
+      ],
+      "category": "laravel",
+      "kind": "perso",
+      "demo": "projects/23-laravel-inventory/index.html",
+      "live": "https://gstarmix.github.io/TravauxFormation/projects/23-laravel-inventory/",
+      "thumbnail": "projects/23-laravel-inventory/thumb.png",
+      "complete": true
+    }
+  ]
+}
